@@ -5,21 +5,21 @@
 class TofuSummary < Formula
   desc "Condensed, readable summaries of OpenTofu/Terraform plans"
   homepage "https://github.com/pablocolson/opentofu-summary"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.0/tofu-summary_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4cabb74c4fac484acc007a27338e39f4ab88dd018343a248f3355847e6b4620e"
+      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.1/tofu-summary_0.1.1_darwin_amd64.tar.gz"
+      sha256 "9c0228107295805b6812ef39337ce36894bd85158c023541fdf5ed1afca73ea6"
 
       define_method(:install) do
         bin.install "tofu-summary"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.0/tofu-summary_0.1.0_darwin_arm64.tar.gz"
-      sha256 "38bb525d645f1fd073d6f3853a153cfee250dba9c259a2f4e0df76a72c995c2e"
+      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.1/tofu-summary_0.1.1_darwin_arm64.tar.gz"
+      sha256 "864b0ecba2cb953e2a5ae8579153891cb2c9367f241db401d1f8e0e76b16d384"
 
       define_method(:install) do
         bin.install "tofu-summary"
@@ -29,15 +29,15 @@ class TofuSummary < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.0/tofu-summary_0.1.0_linux_amd64.tar.gz"
-      sha256 "9d9f5fdc734ba8003740db58bb3e804432d53437448dc660e5965577de5728a1"
+      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.1/tofu-summary_0.1.1_linux_amd64.tar.gz"
+      sha256 "c9e8155f0007471aa3e70d879d6a7d0b5ab9e5b7dc9151d8074cab8d4df725f5"
       define_method(:install) do
         bin.install "tofu-summary"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.0/tofu-summary_0.1.0_linux_arm64.tar.gz"
-      sha256 "774b4cdd31f3090d37572eba5157db77b6de9c4ba3d43fd1b98a71d99181be6b"
+      url "https://github.com/pablocolson/opentofu-summary/releases/download/v0.1.1/tofu-summary_0.1.1_linux_arm64.tar.gz"
+      sha256 "0975f301f4ca63761f793fd36ac5199eca701da148c6d6898fc8be7e67dac055"
       define_method(:install) do
         bin.install "tofu-summary"
       end
