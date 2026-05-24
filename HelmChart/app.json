@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "HelmChart",
+    "slug": "helmchart",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0A1628"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.helmchart.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "HelmChart needs your location to show your position on the nautical chart.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "HelmChart uses background location to track your route while navigating."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#0A1628"
+      },
+      "package": "com.helmchart.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-location",
+      "expo-sqlite"
+    ]
+  }
+}
